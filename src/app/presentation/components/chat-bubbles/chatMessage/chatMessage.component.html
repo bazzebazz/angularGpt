@@ -9,6 +9,10 @@
             <markdown>
                 {{text}}
             </markdown>
+
+            @if (audioUrl) {
+                <audio controls [src]="audioUrl" class="w-full"></audio>
+            }
         </div>
 
     </div>
